@@ -52,14 +52,14 @@
               <label>
                 Designação
               </label>
-              <input type="text" class="form-control" placeholder="Designação">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Designação">
               <label>
                 Descrição
               </label>
-              <textarea type="text" class="form-control" placeholder="Descrição"></textarea>
+              <textarea type="text" name="description" id="description" class="form-control" placeholder="Descrição"></textarea>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Salvar Categoria</button>
+              <button type="button" class="btn btn-primary" onclick="handleCreateCategory()">Salvar Categoria</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
             </div>
           </div>
@@ -68,5 +68,5 @@
     </div>
   </div>
 </div>
-
+<script src="./index.js"></script>
 <?php require_once('../includes/footer.php') ?>
